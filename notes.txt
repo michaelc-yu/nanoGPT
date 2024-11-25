@@ -10,3 +10,6 @@ overview of steps:
 -train it here
 -will now get a .pt file, where we can inspect the model weights and also run inference on it
 -for running inference, we need to make sure to use the sudoku_vocab.txt for decoding it properly
+
+run inference like this?
+python sample.py --out_dir=out-sudoku
