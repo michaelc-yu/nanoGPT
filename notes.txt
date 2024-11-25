@@ -2,3 +2,11 @@
 sudoku data is inside data/sudoku
 -sudoku.bin consists of 100 sudoku game examples
 
+
+overview of steps:
+-use Sudoku-RWKV repo to generate sudoku data in the form of jsonl
+-use json2binidx_tool to convert that jsonl file to .bin and .idx files (make sure to use the correct sudoku_vocab.txt in the command)
+-copy the .bin file over and put it in data/sudoku (.bin files already contain tokenized data)
+-train it here
+-will now get a .pt file, where we can inspect the model weights and also run inference on it
+-for running inference, we need to make sure to use the sudoku_vocab.txt for decoding it properly
