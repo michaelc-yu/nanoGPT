@@ -1,0 +1,4 @@
+
+sudoku data is inside data/sudoku
+-sudoku.bin consists of 100 sudoku game examples
+
