@@ -11,5 +11,8 @@ overview of steps:
 -will now get a .pt file, where we can inspect the model weights and also run inference on it
 -for running inference, we need to make sure to use the sudoku_vocab.txt for decoding it properly
 
-run inference like this?
-python sample.py --out_dir=out-sudoku
+train like this:
+python train.py config/train_sudoku.py
+
+run inference like this:
+python sample.py --out_dir=out-sudoku-char
