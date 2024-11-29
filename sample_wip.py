@@ -105,6 +105,7 @@ if load_meta:
         meta = pickle.load(f)
     # TODO want to make this more general to arbitrary encoder/decoder schemes
     stoi, itos = meta['stoi'], meta['itos']
+    itos[132] = '_'
 
     tokens = tokenize(start, stoi.keys())  # Tokenize once
     print(f"tokens: {tokens}")
