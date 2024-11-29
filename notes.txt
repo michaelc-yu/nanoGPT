@@ -15,4 +15,4 @@ train like this:
 python train.py config/train_sudoku.py
 
 run inference like this:
-python sample.py --out_dir=out-sudoku-char
+python sample_wip.py --out_dir=out-sudoku-char
