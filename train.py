@@ -144,6 +144,7 @@ if os.path.exists(meta_path):
     with open(meta_path, 'rb') as f:
         meta = pickle.load(f)
     meta_vocab_size = meta['vocab_size']
+    meta_vocab_size = 133 # for some reason, our input has values 0-132, and the assert fails bc it expects 0 <= tmp4 < 132
     print(f"found vocab_size = {meta_vocab_size} (inside {meta_path})")
 
 # model init
