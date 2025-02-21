@@ -46,7 +46,7 @@ wandb_run_name = 'gpt2' # 'run' + str(time.time())
 # data
 dataset = 'sudoku'
 gradient_accumulation_steps = 5 * 8 # used to simulate larger batch sizes
-batch_size = 12 # if gradient_accumulation_steps > 1, this is the micro-batch size
+batch_size = 48 # if gradient_accumulation_steps > 1, this is the micro-batch size
 block_size = 1024
 # model
 # n_layer = 12
@@ -54,11 +54,11 @@ n_layer = 8
 # n_head = 12
 n_head = 8
 # n_embd = 768
-n_embd = 320
+n_embd = 256
 dropout = 0.0 # for pretraining 0 is good, for finetuning try 0.1+
 bias = False # do we use bias inside LayerNorm and Linear layers?
 # adamw optimizer
-learning_rate = 12e-4 # max learning rate
+learning_rate = 8e-4 # max learning rate
 max_iters = 600000 # total number of training iterations
 weight_decay = 1e-1
 beta1 = 0.9
